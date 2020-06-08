@@ -1,7 +1,7 @@
 .menu{
     &--palette{
         background-color: $bck-color-palette;
-        padding: 0 61px;
+        padding: 0 5%;
     }
 
     &__titre{
@@ -13,6 +13,10 @@
 
             background-image: $grad-color-palette;
             @include text-gradient;
+
+            @include tablet-only{
+                font-size: 60px;
+            }
         }
     }
 
@@ -24,7 +28,7 @@
 
     &__choix{
         &--palette{
-            padding: 0 97px;
+            padding: 0 8.5%;
         }
     }
 }

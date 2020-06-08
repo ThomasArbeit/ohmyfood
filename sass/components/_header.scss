@@ -6,9 +6,15 @@
     margin-bottom: 51px;
 
     background-color: $bck-color-primary;
-    &__logo{
-        font-size: 100px;
-        font-weight: 700;
-        letter-spacing: -3px;
+
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -3px;
+
+    @include mobile-only{
+        height: 120px;
+        font-size: 50px;
+        margin-bottom: 25px;
+
     }
 }

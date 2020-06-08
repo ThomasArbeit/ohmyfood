@@ -12,7 +12,16 @@
     cursor: pointer;
     transition: opacity 300ms ease-in-out;
 
+    @include small-desktop{
+        margin: 23px 12px;
+    }
+
+    @include mobile-only{
+        height: 500px;
+    }
+
     p{
+        text-align: center;
         transition: transform 300ms ease-in-out;
     }
 

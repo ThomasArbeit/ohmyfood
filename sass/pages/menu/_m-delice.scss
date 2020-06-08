@@ -1,7 +1,7 @@
 .menu{
     &--delice{
         background-color: $bck-color-delice;
-        padding: 0 55px;
+        padding: 0 5%;
     }
 
     &__titre{
@@ -24,7 +24,7 @@
 
     &__choix{
         &--delice{
-            padding: 0 117px;
+            padding: 0 10%;
         }
     }
 }

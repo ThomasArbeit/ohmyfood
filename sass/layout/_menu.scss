@@ -2,11 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1190px;
+    width: 1190px;
     margin-bottom: 264px;
+
+    box-shadow: 0 0 25px $clr-shadow;
 
     font-family: $font-delice-secondary;
     font-size: 21px;
+
+    @include small-desktop{
+        width: 100%;
+    }
     
     &__titre{
         text-align: center;
@@ -22,6 +28,10 @@
     &__separation{
         margin-bottom: 33px;
         align-items: center;
+
+        @include tablet-only{
+            flex-direction: column;
+        }
     }
 
     &__sstitre{
@@ -45,7 +55,13 @@
 
     &__choix{
         margin-bottom: 23px;
-        align-items: flex-end;;
+        align-items: flex-end;
+
+        @include tablet-only{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
         
         &--last{
             margin-bottom: 126px;

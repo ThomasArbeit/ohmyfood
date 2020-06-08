@@ -5,6 +5,14 @@
     margin:0 3px -35px 3px;
 
     background-color: $clr-link;
+
+    @include mobile-only{
+        height : $dot-size*0.5;
+        width: $dot-size*0.5;
+        margin-bottom: -22px;
+    }
+    
+
     &1{
         animation: flow 0.6s ease-out 0s infinite alternate;
     }

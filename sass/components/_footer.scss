@@ -9,18 +9,41 @@
     bottom: 0;
     left: 0;
 
+    
+    font-size: 50px;
+    letter-spacing: -2px;
+
+    @include small-desktop{
+        font-size: 40px;
+    }
+
+    @include tablet-only{
+        font-size: 30px;
+    }
+
+    @include mobile-only{
+        height: 140px;
+    }
+
     background-color: $bck-color-primary;
+
     &__maxlarge{
         padding: 0 42px;
         max-width: 1500px;
         width: 100%;
         display: flex;
         justify-content: space-between;
+
+        @include mobile-only{
+            height: 100%;
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
     }
     &__nav{
         display: block;
-        font-size: 50px;
-        letter-spacing: -2px;
         &:hover{
             animation: wiggle .6s;
         }

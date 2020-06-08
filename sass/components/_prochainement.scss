@@ -9,6 +9,9 @@
     align-items: center;
 
     background-color: $bck-color-primary;
+    @include mobile-only{
+        height: $prochainement-height*0.7;
+    }
 
     &__text{
         font-size: 60px;
@@ -17,6 +20,9 @@
         margin-right: 10px;
 
         color: $clr-link;
+        @include mobile-only{
+            font-size: 35px;
+        }
     }
     
 }
