@@ -1,0 +1,30 @@
+.menu{
+    &--delice{
+        background-color: $bck-color-delice;
+        padding: 0 55px;
+    }
+
+    &__titre{
+        &--delice{
+            font-size: 80px;
+            font-weight: 400;
+            font-family: $font-delice-primary;
+            padding: 0 20px;
+            margin: 166px 0 132px 0;
+            
+            background-image: $grad-color-delice;
+            @include text-gradient;
+        }
+    }
+    &__sstitre{
+        &--delice{
+            font-size: 31px;
+        }
+    }
+
+    &__choix{
+        &--delice{
+            padding: 0 117px;
+        }
+    }
+}

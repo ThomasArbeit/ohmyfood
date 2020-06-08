@@ -1,0 +1,24 @@
+.card{
+    &--note{
+        background-color: $bck-color-note;
+        color: $clr-note;
+    }
+    &__icon{
+        font-size: 70px;
+
+        background-image: $grad-color-noteicon;
+        @include text-gradient;
+    }
+    &__titre{
+        &--note{
+            font-family: $font-note-primary;
+            font-size: 39px;
+        }
+    }
+    &__sstitre{
+        &--note{
+            font-family: $font-note-secondary;
+            text-transform: uppercase;
+        }
+    }
+}

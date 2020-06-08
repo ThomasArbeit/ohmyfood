@@ -1,0 +1,21 @@
+.card{
+    &--palette{
+        background-color: $bck-color-palette;
+    }
+    &__titre{
+        &--palette{
+            font-family: $font-palette-primary;
+            font-size: 45px;
+
+            background-image: $grad-color-palette;
+            @include text-gradient;
+        }
+    }
+    &__sstitre{
+        &--palette{
+            font-family: $font-palette-secondary;
+
+            color: $clr-palette;
+        }
+    }
+}

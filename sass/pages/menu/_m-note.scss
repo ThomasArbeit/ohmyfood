@@ -1,0 +1,58 @@
+.menu{
+    &--note{
+        background-color: $bck-color-note;
+        padding:66px 125px 113px 125px;
+        color: $clr-note;
+        font-family: $font-delice-secondary;
+    }
+
+    &__titre, &__bastitre{
+        &--note{
+            font-family: $font-note-primary;
+        }
+    }
+    &__titre{
+        &--note{
+            font-size: 60px;
+            font-weight: 500;
+        }
+    }
+
+    &__sstitre{
+        &--note{
+            font-size: 37px;
+        }
+    }
+
+
+    &__prix{
+        &--note{
+            font-size: 27px;
+            font-weight: 600;
+        }
+    }
+
+    &__bastitre{
+        &--note{
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 46px;
+        }
+    }
+    &__icon{
+        &--note{
+            background-image: $grad-color-noteicon;
+            @include text-gradient;
+        }
+
+        &--notelarge{
+            font-size: 100px;
+        }
+
+        &--notesmall{
+            font-size: 67px;
+            margin-right: 16px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.menu{
+    &--palette{
+        background-color: $bck-color-palette;
+        padding: 0 61px;
+    }
+
+    &__titre{
+        &--palette{
+            font-family: $font-palette-primary;
+            font-size: 100px;
+            padding: 0 20px;
+            margin: 144px 0 118px 0;
+
+            background-image: $grad-color-palette;
+            @include text-gradient;
+        }
+    }
+
+    &__sstitre{
+        &--palette{
+            font-size: 29px;
+        }
+    }
+
+    &__choix{
+        &--palette{
+            padding: 0 97px;
+        }
+    }
+}

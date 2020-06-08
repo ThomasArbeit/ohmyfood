@@ -1,0 +1,29 @@
+.card{
+    height: $card-height;
+    width: $card-width;
+    margin: 47px 51px;
+    box-shadow: 0 0 25px $clr-shadow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out;
+
+    p{
+        transition: transform 300ms ease-in-out;
+    }
+
+    &__sstitre{
+        font-size: 61px;
+    }
+
+    &:hover{
+        opacity: 0.6;
+        & > p{
+            transform: scale(1.2);
+        }
+    }
+}

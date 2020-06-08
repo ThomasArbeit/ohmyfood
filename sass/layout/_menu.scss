@@ -1,0 +1,58 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1190px;
+    margin-bottom: 264px;
+
+    font-family: $font-delice-secondary;
+    font-size: 21px;
+    
+    &__titre{
+        text-align: center;
+        margin-bottom: 79px;
+    }
+
+    &__separation, &__choix{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__separation{
+        margin-bottom: 33px;
+        align-items: center;
+    }
+
+    &__sstitre{
+        display: flex;
+        flex-direction: column;
+        &::after{
+            content:"";
+            background: black;
+            height: 4px;
+            width: 100%;
+            transform: scaleX(0);
+        }
+    }
+
+    &__ligne{
+        width: 30%;
+        &--reverse{
+            transform: scaleX(-1);
+        }
+    }
+
+    &__choix{
+        margin-bottom: 23px;
+        align-items: flex-end;;
+        
+        &--last{
+            margin-bottom: 126px;
+        }
+    }
+
+    &__prix{
+        font-size: 29px;
+    }
+}

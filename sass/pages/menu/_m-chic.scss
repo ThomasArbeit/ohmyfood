@@ -1,0 +1,44 @@
+.menu{
+    &--chic{
+        background-color: $bck-color-chic;
+        font-family: $font-chic-secondary;
+        padding: 0 47px 0 47px;
+    }
+
+    &__titre{
+        &--chic{
+            margin: 185px 0 162px 0;
+
+            font-size: 56px;
+            font-family: $font-chic-primary;
+            background-image: $grad-color-chic;
+            @include text-gradient;
+        }
+    }
+
+    &__sstitre{
+        &--chic{
+            font-size: 31px;
+        }
+    }
+
+    &__separation, &__choix{
+        &--chicorange{
+            color: $clr-chic;
+        }
+
+        &--chicviolet{
+            color: $clr-chic-2;
+        }
+
+        &--chicbleu{
+            color: $clr-chic-3;
+        }
+    }
+
+    &__choix{
+        &--chic{
+            padding: 0 147px;
+        }
+    }
+}

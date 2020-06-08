@@ -1,0 +1,20 @@
+.card{
+    &--delice{
+        background-color: $bck-color-delice;
+    }
+    &__titre{
+        &--delice{
+            font-family: $font-delice-primary;
+            font-size: 45px;
+
+            background-image: $grad-color-delice;
+            @include text-gradient;
+        }
+    }
+    &__sstitre{
+        &--delice{
+            font-family: $font-delice-secondary;
+            color: $clr-delice;
+        }
+    }
+}

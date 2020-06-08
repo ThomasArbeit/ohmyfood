@@ -1,0 +1,21 @@
+.card{
+    &--chic{
+        background-color: $bck-color-chic;
+    }
+    &__titre{
+        &--chic{
+            font-family: $font-chic-primary;
+            font-size: 34px;
+
+            background-image: $grad-color-chic;
+            @include text-gradient;
+        }
+    }
+    &__sstitre{
+        &--chic{
+            font-family: $font-chic-secondary;
+
+            color: $clr-chic;
+        }
+    }
+}

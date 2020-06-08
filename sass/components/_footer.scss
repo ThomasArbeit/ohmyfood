@@ -1,0 +1,51 @@
+.footer{
+    height: 138px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: $bck-color-primary;
+    &__maxlarge{
+        padding: 0 42px;
+        max-width: 1500px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav{
+        display: block;
+        font-size: 50px;
+        letter-spacing: -2px;
+        &:hover{
+            animation: wiggle .6s;
+        }
+        
+    }
+}
+
+@keyframes wiggle{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: rotate(-5deg);
+    }
+    10%,
+    30%,
+    50%,
+    70%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
