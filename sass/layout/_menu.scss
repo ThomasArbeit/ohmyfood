@@ -37,13 +37,25 @@
     &__sstitre{
         display: flex;
         flex-direction: column;
+        cursor: pointer;
+
+        &:hover{
+            &::after{
+                transform: scaleX(1);
+            }
+        }
+
         &::after{
             content:"";
-            background: black;
+            border-bottom: solid;
             height: 4px;
             width: 100%;
+
+            transform-origin: left;
             transform: scaleX(0);
+            transition: transform 400ms cubic-bezier(.82,.06,.76,.79);
         }
+        
     }
 
     &__ligne{

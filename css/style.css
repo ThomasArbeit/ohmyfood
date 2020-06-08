@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-width: 0%;
 }
 
 html {
@@ -21,13 +22,14 @@ html {
 a {
   text-decoration: none;
   color: #FDCB46;
+  word-wrap: break-word;
 }
 
 h1 {
   margin-top: 35px;
   margin-bottom: 79px;
-  font-size: 60px;
   text-align: center;
+  font-size: 60px;
 }
 @media screen and (max-width: 599px) {
   h1 {
@@ -36,8 +38,13 @@ h1 {
   }
 }
 
-h3 {
+p {
+  line-height: 1.5;
+}
+
+h2, h3 {
   text-align: center;
+  margin: 25px 0;
 }
 
 .header {
@@ -230,11 +237,15 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: auto;
 }
 .l-container--menu {
   flex-direction: column;
   align-items: center;
+}
+.l-container--legal {
+  flex-direction: column;
+  margin-bottom: 300px;
+  padding: 0 10%;
 }
 
 .menu {
@@ -273,13 +284,19 @@ h3 {
 .menu__sstitre {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+.menu__sstitre:hover::after {
+  transform: scaleX(1);
 }
 .menu__sstitre::after {
   content: "";
-  background: black;
+  border-bottom: solid;
   height: 4px;
   width: 100%;
+  transform-origin: left;
   transform: scaleX(0);
+  transition: transform 400ms cubic-bezier(0.82, 0.06, 0.76, 0.79);
 }
 .menu__ligne {
   width: 30%;
@@ -303,6 +320,13 @@ h3 {
 }
 .menu__prix {
   font-size: 29px;
+}
+
+.mentions {
+  max-width: 1500px;
+  text-align: justify;
+  padding: 0 5%;
+  margin-bottom: 300px;
 }
 
 .card--note {
@@ -351,6 +375,7 @@ h3 {
 .card__titre--delice {
   font-family: "Dancing Script", cursive;
   font-size: 45px;
+  padding-left: 5px;
   background-image: linear-gradient(90deg, #0D1F71, #0D88FA);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -369,6 +394,7 @@ h3 {
 .card__titre--palette {
   font-family: "Kaushan Script", cursive;
   font-size: 45px;
+  padding-right: 5px;
   background-image: linear-gradient(90deg, #3D9339, #C3FD8B);
   background-size: 100%;
   -webkit-background-clip: text;
