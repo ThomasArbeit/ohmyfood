@@ -336,7 +336,7 @@ h2, h3 {
 .card__icon {
   font-size: 70px;
   background-image: linear-gradient(45deg, #F04A5E, #F78F6A);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -358,7 +358,7 @@ h2, h3 {
   font-family: "Croissant One", cursive;
   font-size: 34px;
   background-image: linear-gradient(45deg, #D8852E, #905BFD);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -377,7 +377,7 @@ h2, h3 {
   font-size: 45px;
   padding-left: 5px;
   background-image: linear-gradient(90deg, #0D1F71, #0D88FA);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -396,7 +396,7 @@ h2, h3 {
   font-size: 45px;
   padding-right: 5px;
   background-image: linear-gradient(90deg, #3D9339, #C3FD8B);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -435,7 +435,7 @@ h2, h3 {
 }
 .menu__icon--note {
   background-image: linear-gradient(45deg, #F04A5E, #F78F6A);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -459,7 +459,7 @@ h2, h3 {
   font-size: 56px;
   font-family: "Croissant One", cursive;
   background-image: linear-gradient(45deg, #D8852E, #905BFD);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -492,7 +492,7 @@ h2, h3 {
   padding: 0 20px;
   margin: 166px 0 132px 0;
   background-image: linear-gradient(90deg, #0D1F71, #0D88FA);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -515,7 +515,7 @@ h2, h3 {
   padding: 0 20px;
   margin: 144px 0 118px 0;
   background-image: linear-gradient(90deg, #3D9339, #C3FD8B);
-  background: 100%;
+  background-image: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
