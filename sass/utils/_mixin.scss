@@ -1,7 +1,7 @@
 /* MIXIN POUR LES GRADIENTS */
 
 @mixin text-gradient{
-    background-image: 100%;
+    background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -23,7 +23,7 @@
 }
 
 @mixin tablet-only {
-    @media screen and (max-width: map-get($breakpoints, tablet)){
+    @media screen and (max-width: map-get($breakpoints, sml-dsktp)){
         @content;
     }
 }

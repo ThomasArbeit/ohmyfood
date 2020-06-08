@@ -9,7 +9,7 @@
 
             padding-right: 5px;
 
-            background-image: $grad-color-palette;
+            background: $grad-color-palette;
             @include text-gradient;
         }
     }

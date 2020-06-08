@@ -6,7 +6,7 @@
     &__icon{
         font-size: 70px;
 
-        background-image: $grad-color-noteicon;
+        background: $grad-color-noteicon;
         @include text-gradient;
     }
     &__titre{
