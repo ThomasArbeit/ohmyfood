@@ -10,10 +10,14 @@
             font-weight: 400;
             font-family: $font-delice-primary;
             padding: 0 20px;
-            margin: 166px 0 132px 0;
+            margin: 2.075em 0 1.65em 0;
             
             background-image: $grad-color-delice;
             @include text-gradient;
+
+            @include mobile-only{
+                font-size: 39px;
+            }
         }
     }
     &__sstitre{

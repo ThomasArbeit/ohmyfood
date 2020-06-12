@@ -58,6 +58,11 @@ h2, h3 {
   font-weight: 700;
   letter-spacing: -3px;
 }
+@media screen and (max-width: 1278px) {
+  .header {
+    font-size: 70px;
+  }
+}
 @media screen and (max-width: 599px) {
   .header {
     height: 120px;
@@ -78,11 +83,6 @@ h2, h3 {
   font-size: 50px;
   letter-spacing: -2px;
   background-color: #579C87;
-}
-@media screen and (max-width: 1278px) {
-  .footer {
-    font-size: 40px;
-  }
 }
 @media screen and (max-width: 1278px) {
   .footer {
@@ -134,7 +134,7 @@ h2, h3 {
 .card {
   height: 758px;
   width: 536px;
-  margin: 47px 51px;
+  margin: 47px 3.5%;
   box-shadow: 0 0 25px #a5a5a5;
   display: flex;
   flex-direction: column;
@@ -143,14 +143,10 @@ h2, h3 {
   cursor: pointer;
   transition: opacity 300ms ease-in-out;
 }
-@media screen and (max-width: 1278px) {
-  .card {
-    margin: 23px 12px;
-  }
-}
 @media screen and (max-width: 599px) {
   .card {
     height: 500px;
+    margin: 23px 3.5%;
   }
 }
 .card p {
@@ -236,7 +232,9 @@ h2, h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1500px;
   width: 100%;
+  margin: auto;
 }
 .l-container--menu {
   flex-direction: column;
@@ -409,7 +407,7 @@ h2, h3 {
 
 .menu--note {
   background-color: #FCDFDB;
-  padding: 66px 10% 113px 10%;
+  padding: 0 10% 113px 10%;
   color: #3C1218;
   font-family: "Segoe Print", "Sriracha", cursive;
 }
@@ -418,7 +416,13 @@ h2, h3 {
 }
 .menu__titre--note {
   font-size: 60px;
+  margin: 1.1em 0 1.2em;
   font-weight: 500;
+}
+@media screen and (max-width: 599px) {
+  .menu__titre--note {
+    font-size: 45px;
+  }
 }
 .menu__sstitre--note {
   font-size: 37px;
@@ -433,6 +437,13 @@ h2, h3 {
   font-weight: 500;
   font-size: 46px;
 }
+@media screen and (max-width: 599px) {
+  .menu__bastitre--note {
+    flex-direction: column;
+    font-size: 32px;
+    text-align: center;
+  }
+}
 .menu__icon--note {
   background-image: linear-gradient(45deg, #F04A5E, #F78F6A);
   background-size: 100%;
@@ -444,9 +455,19 @@ h2, h3 {
 .menu__icon--notelarge {
   font-size: 100px;
 }
+@media screen and (max-width: 599px) {
+  .menu__icon--notelarge {
+    font-size: 60px;
+  }
+}
 .menu__icon--notesmall {
   font-size: 67px;
   margin-right: 16px;
+}
+@media screen and (max-width: 599px) {
+  .menu__icon--notesmall {
+    font-size: 40px;
+  }
 }
 
 .menu--chic {
@@ -455,7 +476,7 @@ h2, h3 {
   padding: 0 3%;
 }
 .menu__titre--chic {
-  margin: 185px 0 162px 0;
+  margin: 3.3em 0 2.9em 0;
   font-size: 56px;
   font-family: "Croissant One", cursive;
   background-image: linear-gradient(45deg, #D8852E, #905BFD);
@@ -464,6 +485,11 @@ h2, h3 {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+@media screen and (max-width: 599px) {
+  .menu__titre--chic {
+    font-size: 40px;
+  }
 }
 .menu__sstitre--chic {
   font-size: 31px;
@@ -490,13 +516,18 @@ h2, h3 {
   font-weight: 400;
   font-family: "Dancing Script", cursive;
   padding: 0 20px;
-  margin: 166px 0 132px 0;
+  margin: 2.075em 0 1.65em 0;
   background-image: linear-gradient(90deg, #0D1F71, #0D88FA);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+@media screen and (max-width: 599px) {
+  .menu__titre--delice {
+    font-size: 39px;
+  }
 }
 .menu__sstitre--delice {
   font-size: 31px;
@@ -513,7 +544,7 @@ h2, h3 {
   font-family: "Kaushan Script", cursive;
   font-size: 100px;
   padding: 0 20px;
-  margin: 144px 0 118px 0;
+  margin: 2.4em 0 1.95em 0;
   background-image: linear-gradient(90deg, #3D9339, #C3FD8B);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -524,6 +555,11 @@ h2, h3 {
 @media screen and (max-width: 1278px) {
   .menu__titre--palette {
     font-size: 60px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .menu__titre--palette {
+    font-size: 42px;
   }
 }
 .menu__sstitre--palette {

@@ -1,7 +1,7 @@
 .menu{
     &--note{
         background-color: $bck-color-note;
-        padding:66px 10% 113px 10%;
+        padding:0 10% 113px 10%;
         color: $clr-note;
         font-family: $font-delice-secondary;
     }
@@ -14,7 +14,12 @@
     &__titre{
         &--note{
             font-size: 60px;
+            margin: 1.1em 0 1.2em;
             font-weight: 500;
+            
+            @include mobile-only{
+                font-size: 45px;
+            }
         }
     }
 
@@ -38,21 +43,36 @@
             align-items: center;
             font-weight: 500;
             font-size: 46px;
+
+            @include mobile-only{
+                flex-direction: column;
+                font-size: 32px;
+                text-align: center;
+            }
         }
     }
     &__icon{
         &--note{
             background-image: $grad-color-noteicon;
             @include text-gradient;
+
+            
         }
 
         &--notelarge{
             font-size: 100px;
+            @include mobile-only{
+                font-size: 60px;
+            }
         }
 
         &--notesmall{
             font-size: 67px;
             margin-right: 16px;
+
+            @include mobile-only{
+                font-size: 40px;
+            }
         }
     }
 }

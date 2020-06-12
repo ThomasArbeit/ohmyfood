@@ -13,10 +13,6 @@
     font-size: 50px;
     letter-spacing: -2px;
 
-    @include small-desktop{
-        font-size: 40px;
-    }
-
     @include tablet-only{
         font-size: 30px;
     }

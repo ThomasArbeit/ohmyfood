@@ -9,13 +9,17 @@
             font-family: $font-palette-primary;
             font-size: 100px;
             padding: 0 20px;
-            margin: 144px 0 118px 0;
+            margin: 2.4em 0 1.95em 0;
 
             background-image: $grad-color-palette;
             @include text-gradient;
 
             @include tablet-only{
                 font-size: 60px;
+            }
+
+            @include mobile-only{
+                font-size: 42px;
             }
         }
     }
