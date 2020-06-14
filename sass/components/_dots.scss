@@ -2,14 +2,13 @@
     height : $dot-size;
     width: $dot-size;
     border-radius: 50%;
-    margin:0 3px -35px 3px;
+    margin:0 3px;
 
     background-color: $clr-link;
 
     @include mobile-only{
         height : $dot-size*0.5;
         width: $dot-size*0.5;
-        margin-bottom: -22px;
     }
     
 

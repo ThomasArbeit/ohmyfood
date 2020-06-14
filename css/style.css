@@ -189,19 +189,28 @@ h2, h3 {
     font-size: 35px;
   }
 }
+.prochainement__anim {
+  display: flex;
+  align-items: flex-end;
+  height: 40px;
+}
+@media screen and (max-width: 599px) {
+  .prochainement__anim {
+    height: 25px;
+  }
+}
 
 .anim__dot {
   height: 8px;
   width: 8px;
   border-radius: 50%;
-  margin: 0 3px -35px 3px;
+  margin: 0 3px;
   background-color: #FDCB46;
 }
 @media screen and (max-width: 599px) {
   .anim__dot {
     height: 4px;
     width: 4px;
-    margin-bottom: -22px;
   }
 }
 .anim__dot1 {

@@ -24,5 +24,14 @@
             font-size: 35px;
         }
     }
+
+    &__anim{
+        display: flex;
+        align-items: flex-end;
+        height: 40px;
+        @include mobile-only{
+            height: 25px;
+        }
+    }
     
 }
